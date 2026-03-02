@@ -20,13 +20,13 @@
 #### Visuals
 
 *Query History*
-![SqlPulse History Window](artifacts/docspict/HistoryWindow_Main.png)
+![SqlPulse History Window](docspict/HistoryWindow_Main.png)
 
 *Result Grid Filter*
-![Result Grid Filter](artifacts/docspict/ResultGrid_Filter.png)
+![Result Grid Filter](docspict/ResultGrid_Filter.png)
 
 *Data Export*
-![Data Export](artifacts/docspict/ResultGrid_ExportMenu.png)
+![Data Export](docspict/ResultGrid_ExportMenu.png)
 
 ### Pro
 
@@ -47,45 +47,45 @@
 #### Visuals
 
 *Session Management*
-![Session Management](artifacts/docspict/HistoryWindow_Sessions.png)
+![Session Management](docspict/HistoryWindow_Sessions.png)
 
 *Object Explorer Database and Job Grouping*
-![DB Grouping](artifacts/docspict/ObjectExplorer_DBGrouping.png)
-![Job Grouping](artifacts/docspict/ObjectExplorer_JobGrouping.png)
+![DB Grouping](docspict/ObjectExplorer_DBGrouping.png)
+![Job Grouping](docspict/ObjectExplorer_JobGrouping.png)
 
 *Object Search*
-![Object Search Results](artifacts/docspict/ObjectSearch_Results.png)
-![Object Search Definition](artifacts/docspict/ObjectSearch_Definition.png)
+![Object Search Results](docspict/ObjectSearch_Results.png)
+![Object Search Definition](docspict/ObjectSearch_Definition.png)
 
 *SQL Code Inspector*
-![SQL Code Inspector](artifacts/docspict/SQLCodeInspector_Window.png)
+![SQL Code Inspector](docspict/SQLCodeInspector_Window.png)
 
 ## Integration in SSMS
 
 SqlPulse integrates seamlessly into SSMS via the Tools menu and context menus.
 
 *Tools Menu*
-![SSMS Tools Menu](artifacts/docspict/SSMS_ToolsMenu.png)
-![SSMS Tools Menu Expanded](artifacts/docspict/SSMS_ToolsMenu_Expanded.png)
+![SSMS Tools Menu](docspict/SSMS_ToolsMenu.png)
+![SSMS Tools Menu Expanded](docspict/SSMS_ToolsMenu_Expanded.png)
 
 *Query Editor Context Menu*
-![Query Editor Context Menu](artifacts/docspict/QueryEditor_ContextMenu.png)
-![Query Editor Context Menu Expanded](artifacts/docspict/QueryEditor_ContextMenu_Expanded.png)
+![Query Editor Context Menu](docspict/QueryEditor_ContextMenu.png)
+![Query Editor Context Menu Expanded](docspict/QueryEditor_ContextMenu_Expanded.png)
 
 ## Settings
 
 SqlPulse is highly configurable to suit your workflow.
 
-![General Settings](artifacts/docspict/Settings_General.png)
-![Storage Settings](artifacts/docspict/Settings_Storage.png)
-![History Settings](artifacts/docspict/Settings_History.png)
-![Session Settings](artifacts/docspict/Settings_Sessions.png)
-![DB Groups Settings](artifacts/docspict/Settings_DBGroups.png)
-![Job Groups Settings](artifacts/docspict/Settings_JobGroups.png)
-![Shared Settings](artifacts/docspict/Settings_Shared.png)
-![Plan Analyzer Settings](artifacts/docspict/Settings_PlanAnalyzer.png)
-![SQL Formatter Settings](artifacts/docspict/Settings_SQLFormatter.png)
-![Advanced Settings](artifacts/docspict/Settings_Advanced.png)
+![General Settings](docspict/Settings_General.png)
+![Storage Settings](docspict/Settings_Storage.png)
+![History Settings](docspict/Settings_History.png)
+![Session Settings](docspict/Settings_Sessions.png)
+![DB Groups Settings](docspict/Settings_DBGroups.png)
+![Job Groups Settings](docspict/Settings_JobGroups.png)
+![Shared Settings](docspict/Settings_Shared.png)
+![Plan Analyzer Settings](docspict/Settings_PlanAnalyzer.png)
+![SQL Formatter Settings](docspict/Settings_SQLFormatter.png)
+![Advanced Settings](docspict/Settings_Advanced.png)
 
 ## Installation
 
@@ -96,15 +96,15 @@ SqlPulse is highly configurable to suit your workflow.
 3. Restart SSMS
 4. The **SqlPulse** menu appears under **Tools**
 
-![SqlPulse Installer Start](artifacts/docspict/Installer_Start.png)
-![SqlPulse Installer Running](artifacts/docspict/Installer_Running.png)
-![SqlPulse Installer Finished](artifacts/docspict/Installer_Finished.png)
+![SqlPulse Installer Start](docspict/Installer_Start.png)
+![SqlPulse Installer Running](docspict/Installer_Running.png)
+![SqlPulse Installer Finished](docspict/Installer_Finished.png)
 
 > The installer automatically detects all SSMS versions on your machine and installs the extension for each.
 
 ## Quick Start
 
-![SqlPulse Menu](artifacts/docspict/Screenshot%202026-03-02%20165309.png)
+![SqlPulse Menu](docspict/Screenshot%202026-03-02%20165309.png)
 
 | Action | How |
 |--------|-----|
