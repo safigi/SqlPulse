@@ -181,9 +181,9 @@ Activate via: **Tools** > **SqlPulse** > **Activate License**
 - Ensure the active document contains valid T-SQL
 - Click **Analyze** or switch to the SQL Inspector tool window
 
-**Releses**
+**Releases**
 
-[GitHub Releses](https://github.com/safigi/SqlPulse/releases)
+[GitHub Releases](https://github.com/safigi/SqlPulse/releases)
 
 ## Support
 
