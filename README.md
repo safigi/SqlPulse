@@ -249,3 +249,5 @@ Activate via: **Tools** > **SqlPulse** > **Activate License**
 - **Bug reports & feature requests:** [GitHub Issues](https://github.com/safigi/SqlPulse/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/safigi/SqlPulse/discussions)
 - **Log file:** `%LOCALAPPDATA%\SqlPulseTool\extension.log` (attach when reporting issues)
+
+![Downloads](https://img.shields.io/github/downloads/IstvanSafar/SqlPulse/total)
