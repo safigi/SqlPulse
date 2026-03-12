@@ -90,7 +90,7 @@ SqlPulse is highly configurable to suit your workflow.
 
 ### Setup Installer (Recommended)
 
-1. Download the latest **SqlPulseInstaller.exe** from [Releases](https://github.com/safigi/SqlPulse/releases)
+1. Download the latest **SqlPulseInstaller.exe** from [Releases](https://github.com/IstvanSafar/SqlPulse/releases)
 2. Run the installer
 3. Restart SSMS
 4. The **SqlPulse** menu appears under **Tools**
@@ -242,12 +242,28 @@ Activate via: **Tools** > **SqlPulse** > **Activate License**
 
 **Releases**
 
-[GitHub Releases](https://github.com/safigi/SqlPulse/releases)
+[GitHub Releases](https://github.com/IstvanSafar/SqlPulse/releases)
+
+## Privacy & Usage Analytics
+
+SqlPulse can optionally collect **anonymous feature usage statistics** to help prioritize development.
+
+- **Opt-in only** � disabled by default. Enable via **Settings > Advanced > Track feature usage**
+- **Fully local** � data is stored in `%LOCALAPPDATA%\SqlPulseTool\usage.db` only
+- **No upload** � nothing is sent anywhere without your explicit action
+- **No PII** � only feature names and usage counts are recorded (e.g. `filter: 12`, `export_csv: 5`)
+- **No SQL, no connections, no personal data** � ever
+
+
+## Security & Privacy
+
+- [Security policy & activation source code](SECURITY.md) — what data leaves your machine, full source of the license system
+- [Privacy policy](PRIVACY.md) — what is stored locally and what (if anything) is transmitted
 
 ## Support
 
-- **Bug reports & feature requests:** [GitHub Issues](https://github.com/safigi/SqlPulse/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/safigi/SqlPulse/discussions)
+- **Bug reports & feature requests:** [GitHub Issues](https://github.com/IstvanSafar/SqlPulse/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/IstvanSafar/SqlPulse/discussions)
 - **Log file:** `%LOCALAPPDATA%\SqlPulseTool\extension.log` (attach when reporting issues)
 
 ![Downloads](https://img.shields.io/github/downloads/IstvanSafar/SqlPulse/total)
