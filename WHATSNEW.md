@@ -21,7 +21,6 @@
 - **Advanced Grid Filter (Pro)** — multi-condition filters with AND/OR logic and 9 operators
 - **IntelliSense schema cache warmup** — auto-warms on view attach for faster IntelliSense
 - Dual build: internal VSIX (SSMS 21/22) + shell15 variant (SSMS 18/19/20)
-- Auto version increment on every `deploy.ps1` run
 - SMO schema cache builder for Object Search metadata
 
 ### Changed

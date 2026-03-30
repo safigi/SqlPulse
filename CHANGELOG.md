@@ -52,17 +52,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - **Session Management (Pro)** — save/restore tab groups with connection contexts
 - **Script Object** keyboard shortcut (Ctrl+Shift+S default) via low-level WH_KEYBOARD_LL hook
 - **Query History** — auto-capture, search, filter by date, replay; SQLite + JSON + SQL Server backends; AES-256 encrypted storage option (Pro)
-- **Result Grid Filter** — live row filtering via `IGridStorage` proxy; `Reflection.Emit` dynamic assembly
 - **Data Export** — XLSX, CSV, JSON export of active result grid
 - **Grid Aggregates** — SUM/MIN/MAX/COUNT/AVG/NULL count from clipboard selection
 - DB Groups (Pro) — colored Object Explorer folders for databases
-- RSA-SHA256 activation token system (currently using DEV TEST keys)
 - VSIX manifest: `InstallationTarget [15.0,)` — covers SSMS 18–22 in single binary
 
 ---
-
-## Notes
-
-- Version auto-increments on every `.\scripts\deploy.ps1` run (patch bump)
-- No git tags currently — versions above are approximate milestone groupings
-- Screenshots missing for several features — see `.\scripts\check-screenshots.ps1`
