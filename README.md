@@ -8,7 +8,7 @@
 
 **SqlPulse** is a productivity extension for SQL Server Management Studio that adds query history, result grid filtering, SQL code analysis, execution plan comparison, live SQL profiling, workspace management, and safety features to SSMS.
 
-**[What's New](WHATSNEW.md)** -- SQL Profiler, Quick Connect, Connection Strip, Conditional Formatting, Transaction Guard, Blocking Tree, and more.
+**[What's New](WHATSNEW.md)** -- SQL Profiler, Quick Connect, Connection Strip, Conditional Formatting, Transaction Guard, Blocking Tree, Dependency view, and more.
 
 ## Features
 
@@ -60,6 +60,7 @@
 | **Excel Export** | Export result grids to XLSX (OpenXML). |
 | **Encrypted History** | AES-256 encrypted history storage with passphrase protection. |
 | **SQL Server History Backend** | Store query history in a shared SQL Server table for team-wide access. |
+| **Dependency view** | Quick dependency view from object search or from the the code thab when you select an object|
 
 #### Visuals
 *Grid Filter*
