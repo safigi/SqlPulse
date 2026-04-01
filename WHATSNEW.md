@@ -1,5 +1,18 @@
 ﻿# What's New in SqlPulse
 
+**v0.1.251 - 2026-04-01**
+
+---
+
+### Changed
+- **Profiler: Pluggable Storage Sink** — async write queue (`BlockingCollection`) decouples I/O from the poll thread; four sink types: Auto (temp file, always on), File (.jsonl.gz, kept after session), SQL Server (SqlBulkCopy batch insert, auto-creates table), SQLite (local .db file); sink switchable live without data loss; export commands (CSV/JSON/SQL) read from sink when available, no OOM on large sessions
+- **Profiler: Auto temp file** — even in default mode all events are streamed to `%TEMP%\SqlPulse_*.jsonl`; file deleted on session clear or sink switch; path shown in toolbar
+- **Profiler: Status bar** — shows `N total (M in memory)` when in-memory buffer is smaller than the full captured history
+
+---
+
+---
+
 **v0.1.249 - 2026-03-31**
 
 ---
