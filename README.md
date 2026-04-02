@@ -43,6 +43,15 @@
 *Connection Strip — colored bar at the bottom of the query editor*
 ![Connection Strip](docspict/ConnectionStrip_Editor.png)
 
+*SQL Profiler — live XE-based query capture with blocking tree and wait stats*
+![SQL Profiler Window](docspict/Profiler_Window.png)
+
+*SQL Profiler — top queries panel (CPU / duration / reads / wait types from captured events)*
+![SQL Profiler Top Queries](docspict/Profiler_TopQueries.png)
+
+*SQL Profiler — blocking tree view (blocker → blocked session hierarchy)*
+![SQL Profiler Blocking Tree](docspict/Profiler_BlockingTree.png)
+
 ### Pro
 
 | Feature | Description |
@@ -52,7 +61,7 @@
 | **Advanced Grid Filter** | Multi-condition filters with AND/OR logic and 9 operators (Contains, Regex, Equals, Starts With, etc.). |
 | **Session Management** | Save and restore entire tab groups with connection contexts. Resume complex tasks exactly where you left off. |
 | **Object Search** | Fast full-text search across all database objects (tables, views, procedures, functions) with cached metadata. |
-| **Quick Connect** | Floating dropdown showing your preferred and recent connections. One click to open a new query window. Supports both Windows Auth and SQL Server Auth connections. Click **+ Add** in the header to add a new connection without leaving the dropdown. |
+| **Quick Connect** | Floating dropdown showing your preferred and recent connections. Click a connection to open a new query window, or hover and click **Replace** to change the connection on the active editor tab without opening a new window. Supports both Windows Auth and SQL Server Auth connections. Click **+ Add** in the header to add a new connection without leaving the dropdown. |
 | **Tab Management** | Auto-rename and color-code query tabs based on environment. Red for Production, Green for Dev - prevent accidental executions. |
 | **Grid Conditional Formatting** | Color result grid rows or cells based on column values — e.g. highlight ERROR rows in red, WARNING in orange. Define multiple rules with 13 operators (Contains, Regex, >, <, Is Empty, etc.). Built-in **zebra striping** (alternating row colors). Condition rules always override the zebra base layer. Applies instantly after each query. |
 | **DB & Job Grouping** | Organize databases and SQL Agent jobs into colored groups in Object Explorer. |
@@ -63,9 +72,6 @@
 | **Dependency view** | Quick dependency view from object search or from the the code thab when you select an object|
 
 #### Visuals
-*Grid Filter*
-![Grid Filter](docspict/Animation.webp)
-
 *Session Management*
 ![Session Management](docspict/HistoryWindow_Sessions.png)
 
@@ -80,15 +86,6 @@
 *SQL Code Inspector*
 ![SQL Code Inspector](docspict/SQLCodeInspector_Window.png)
 
-*SQL Profiler — live XE-based query capture with blocking tree and wait stats*
-![SQL Profiler Window](docspict/Profiler_Window.png)
-
-*SQL Profiler — top queries panel (CPU / duration / reads / wait types from captured events)*
-![SQL Profiler Top Queries](docspict/Profiler_TopQueries.png)
-
-*SQL Profiler — blocking tree view (blocker → blocked session hierarchy)*
-![SQL Profiler Blocking Tree](docspict/Profiler_BlockingTree.png)
-
 *Quick Connect — preferred and recent connections dropdown*
 ![Quick Connect Popup](docspict/QuickConnect_Popup.png)
 
@@ -98,11 +95,6 @@
 
 *Zebra Rows — alternating row colors with condition rule override*
 ![Zebra Rows](docspict/ConditionalFormatting_Zebra.png)
-
-*Transaction Guard*
-
-![Transaction Guard Settings](docspict/Settings_TransactionGuard.png)
-
 
 ## Integration in SSMS
 

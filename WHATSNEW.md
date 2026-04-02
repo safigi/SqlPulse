@@ -1,17 +1,21 @@
 ﻿# What's New in SqlPulse
 
-**v0.1.251 - 2026-04-01**
+**v0.1.285 - 2026-04-02**
 
 ---
 
+### Added
+- **Object Explorer: Font size override** — configurable font size (8–24 pt) for the Object Explorer tree, settable in SqlPulse Settings → Object Groups. SSMS has a global font setting under Tools → Options → Environment → Fonts and Colors, but it affects the entire IDE and requires a restart; this setting applies instantly and is scoped to the Object Explorer only.
+- **Object Explorer: Group by schema** — automatically groups Tables/Views/Stored Procedures into schema folders ("dbo (12)", "billing (5)") without manual rule setup; works alongside custom OE groups. Note: SSMS 22.4.1+ has a built-in "Group by schema" option (right-click the Tables node → Group by Schema), but it offers no color coding, no custom ordering, and no interaction with SqlPulse groups. This feature is available for all supported SSMS versions (18+).
+
 ### Changed
+- **Quick Connect: Replace active tab** — hover over any connection in the Quick Connect popup to reveal a "Replace" button; clicking it switches the active query editor to that server/database without opening a new tab.
+  
+  ![Object Explorer: Font size override](docspict/QuickConnect_Popup.png)
+
 - **Profiler: Pluggable Storage Sink** — async write queue (`BlockingCollection`) decouples I/O from the poll thread; four sink types: Auto (temp file, always on), File (.jsonl.gz, kept after session), SQL Server (SqlBulkCopy batch insert, auto-creates table), SQLite (local .db file); sink switchable live without data loss; export commands (CSV/JSON/SQL) read from sink when available, no OOM on large sessions
 - **Profiler: Auto temp file** — even in default mode all events are streamed to `%TEMP%\SqlPulse_*.jsonl`; file deleted on session clear or sink switch; path shown in toolbar
 - **Profiler: Status bar** — shows `N total (M in memory)` when in-memory buffer is smaller than the full captured history
-
----
-
----
 
 **v0.1.249 - 2026-03-31**
 
@@ -38,28 +42,6 @@
 - Fix codeinspector
 
 ---
-
----
-
-**v0.1.248 - 2026-03-31**
-
----
-
-### Added
-- **Dependency Viewer** — new window showing what a database object depends on and what uses it; supports direct (one-level) and recursive (full chain) modes; definition panel scripts the selected dependency inline
-- **Object Search: View Dependencies** — "View Dependencies" button on selected search results opens the Dependency Viewer for that object
-- **Editor context menu: View Dependencies** — SqlPulse → View Dependencies opens the Dependency Viewer directly from selected object name in any query editor
-- **Version check
-
-### Changed
-- SMO scripting logic centralized into `ScriptObjectExecutor`; duplicate code removed from `ScriptObjectCommand` and `QueryEditorContextMenuInjector`
-- `SqlObjectType.ToSmoCollection()` added as single source of truth for type → SMO collection mapping
-- `SearchSmoHelper` delegation to `SmoScriptingService` fixed (was silently falling back to standalone mode inside SSMS due to wrong overload signature)
-- Fix codeinspector
-
----
-
-# What's New in SqlPulse
 
 **v0.1.230 - 2026-03-29**
 
@@ -98,8 +80,6 @@
 - `System.Windows.Forms.Timer` replaced by `DispatcherTimer` everywhere (WinForms timer silently fails in SSMS/WPF host)
 - Installer: VSIXInstaller path fixed for SSMS 22+ (uses VS Installer service, not in-product installer)
 - SQL Profiler: duplicate/malformed multi-line SQL normalization
-
----
 
 ---
 
