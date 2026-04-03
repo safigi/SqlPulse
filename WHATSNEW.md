@@ -1,5 +1,55 @@
 ﻿# What's New in SqlPulse
 
+**v0.1.288 - 2026-04-03**
+
+---
+
+### Added
+- **Object Explorer: Global grouping toggle** — "Enable OE object grouping" checkbox on the Object Groups settings page. When unchecked, all OE grouping (custom groups + schema grouping) is disabled without deleting existing rules. The "Auto-group by schema" checkbox is grayed out when the master toggle is off.
+
+### Fixed
+- **Object Explorer: Infinite expand/collapse loop** — expanding Tables/Views/Stored Procedures nodes could enter an infinite collapse-expand loop when OE object grouping was not enabled (no custom groups, no schema grouping).
+
+---
+
+---
+
+**v0.1.285 - 2026-04-02**
+
+---
+
+### Added
+- **Object Explorer: Font size override** — configurable font size (8–24 pt) for the Object Explorer tree, settable in SqlPulse Settings → Object Groups. SSMS has a global font setting under Tools → Options → Environment → Fonts and Colors, but it affects the entire IDE and requires a restart; this setting applies instantly and is scoped to the Object Explorer only.
+- **Object Explorer: Group by schema** — automatically groups Tables/Views/Stored Procedures into schema folders ("dbo (12)", "billing (5)") without manual rule setup; works alongside custom OE groups. Note: SSMS 22.4.1+ has a built-in "Group by schema" option (right-click the Tables node → Group by Schema), but it offers no color coding, no custom ordering, and no interaction with SqlPulse groups. This feature is available for all supported SSMS versions (18+).
+
+### Changed
+- **Quick Connect: Replace active tab** — hover over any connection in the Quick Connect popup to reveal a "Replace" button; clicking it switches the active query editor to that server/database without opening a new tab. Same-server switches use `IDbConnection.ChangeDatabase()`; cross-server switches (Windows Auth) replace the underlying `SqlConnection` directly via reflection. SQL Auth cross-server falls back to opening a new tab (password not stored).
+- **Profiler: Pluggable Storage Sink** — async write queue (`BlockingCollection`) decouples I/O from the poll thread; four sink types: Auto (temp file, always on), File (.jsonl.gz, kept after session), SQL Server (SqlBulkCopy batch insert, auto-creates table), SQLite (local .db file); sink switchable live without data loss; export commands (CSV/JSON/SQL) read from sink when available, no OOM on large sessions
+- **Profiler: Auto temp file** — even in default mode all events are streamed to `%TEMP%\SqlPulse_*.jsonl`; file deleted on session clear or sink switch; path shown in toolbar
+- **Profiler: Status bar** — shows `N total (M in memory)` when in-memory buffer is smaller than the full captured history
+
+---
+
+---
+
+**v0.1.285 - 2026-04-02**
+
+---
+
+### Added
+- **Object Explorer: Font size override** — configurable font size (8–24 pt) for the Object Explorer tree, settable in SqlPulse Settings → Object Groups. SSMS has a global font setting under Tools → Options → Environment → Fonts and Colors, but it affects the entire IDE and requires a restart; this setting applies instantly and is scoped to the Object Explorer only.
+- **Object Explorer: Group by schema** — automatically groups Tables/Views/Stored Procedures into schema folders ("dbo (12)", "billing (5)") without manual rule setup; works alongside custom OE groups. Note: SSMS 22.4.1+ has a built-in "Group by schema" option (right-click the Tables node → Group by Schema), but it offers no color coding, no custom ordering, and no interaction with SqlPulse groups. This feature is available for all supported SSMS versions (18+).
+
+### Changed
+- **Quick Connect: Replace active tab** — hover over any connection in the Quick Connect popup to reveal a "Replace" button; clicking it switches the active query editor to that server/database without opening a new tab. Same-server switches use `IDbConnection.ChangeDatabase()`; cross-server switches (Windows Auth) replace the underlying `SqlConnection` directly via reflection. SQL Auth cross-server falls back to opening a new tab (password not stored).
+- **Profiler: Pluggable Storage Sink** — async write queue (`BlockingCollection`) decouples I/O from the poll thread; four sink types: Auto (temp file, always on), File (.jsonl.gz, kept after session), SQL Server (SqlBulkCopy batch insert, auto-creates table), SQLite (local .db file); sink switchable live without data loss; export commands (CSV/JSON/SQL) read from sink when available, no OOM on large sessions
+- **Profiler: Auto temp file** — even in default mode all events are streamed to `%TEMP%\SqlPulse_*.jsonl`; file deleted on session clear or sink switch; path shown in toolbar
+- **Profiler: Status bar** — shows `N total (M in memory)` when in-memory buffer is smaller than the full captured history
+
+---
+
+---
+
 **v0.1.285 - 2026-04-02**
 
 ---
